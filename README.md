@@ -1,143 +1,125 @@
-Projeto Laravel - Sistema de Postagens
+# Projeto Laravel - Sistema de Postagens
 
 Aplicação desenvolvida em Laravel e PHP que permite gerenciar postagens com funcionalidades como criação, edição, exclusão, comentários, curtidas e organização por categorias e tags.
 
-Índice
+## Índice
+- [Introdução](#introdução)
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Requisitos para Execução](#requisitos-para-execução)
+- [Instalação e Configuração](#instalação-e-configuração)
+- [Uso](#uso)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
+- [Contato](#contato)
 
-Introdução
-
-Funcionalidades
-
-Tecnologias Utilizadas
-
-Requisitos para Execução
-
-Instalação e Configuração
-
-Uso
-
-Contribuição
-
-Licença
-
-Contato
-
-Introdução
+## Introdução
 
 O sistema permite criar, editar, excluir, comentar, curtir e descurtir postagens. Além disso, é possível organizar as postagens por categorias e tags, proporcionando uma experiência completa para gerenciamento de conteúdos.
 
-Funcionalidades
+## Funcionalidades
 
-Gerenciamento de Postagens:
+- **Gerenciamento de Postagens:**
+  - Criar novas postagens.
+  - Editar postagens existentes.
+  - Excluir postagens.
 
-Criar novas postagens.
+- **Interações:**
+  - Adicionar comentários às postagens.
+  - Curtir e descurtir postagens.
 
-Editar postagens existentes.
+- **Organização:**
+  - Vincular categorias às postagens.
+  - Adicionar tags às postagens.
 
-Excluir postagens.
+## Tecnologias Utilizadas
 
-Interações:
+- **Linguagem:** PHP
+- **Framework:** Laravel
+- **Banco de Dados:** MySQL
+- **Frontend:** Blade Templates (HTML, CSS, Bootstrap, JavaScript)
+- **Outras Ferramentas:** Composer, Artisan
 
-Adicionar comentários às postagens.
+## Requisitos para Execução
 
-Curtir e descurtir postagens.
+- **Servidor Local:** Ambiente como [XAMPP](https://www.apachefriends.org/index.html) ou [Laragon](https://laragon.org/).
+- **PHP:** Versão 8.0 ou superior.
+- **Composer:** Gerenciador de dependências do PHP.
+- **Banco de Dados:** MySQL ou equivalente.
 
-Organização:
+## Instalação e Configuração
 
-Vincular categorias às postagens.
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/lucasmarqoliv/Projeto-BLOG.git
+   ```
 
-Adicionar tags às postagens.
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd projeto-BLOG
+   ```
 
-Tecnologias Utilizadas
+3. Instale as dependências do projeto:
+   ```bash
+   composer install
+   ```
 
-Linguagem: PHP
+4. Configure o arquivo `.env`:
+   - Copie o arquivo de exemplo:
+     ```bash
+     cp .env.example .env
+     ```
+   - Atualize as informações do banco de dados no arquivo `.env`.
 
-Framework: Laravel
+5. Gere a chave da aplicação:
+   ```bash
+   php artisan key:generate
+   ```
 
-Banco de Dados: MySQL (ou equivalente configurado no projeto)
+6. Execute as migrações para criar as tabelas no banco de dados:
+   ```bash
+   php artisan migrate
+   ```
 
-Frontend: Blade Templates (HTML, CSS, JavaScript)
+7. Opcional: Popule o banco de dados com dados iniciais:
+   ```bash
+   php artisan db:seed
+   ```
 
-Outras Ferramentas: Composer, Artisan
+8. Inicie o servidor local:
+   ```bash
+   php artisan serve
+   ```
 
-Requisitos para Execução
+## Uso
 
-Servidor Local: Ambiente como XAMPP ou Laragon.
+Após configurar o projeto, acesse a aplicação em [http://localhost:8000](http://localhost:8000). Utilize as funcionalidades para criar, editar, e gerenciar postagens com categorias, tags e interações de curtidas e comentários.
 
-PHP: Versão 8.0 ou superior.
-
-Composer: Gerenciador de dependências do PHP.
-
-Banco de Dados: MySQL ou equivalente.
-
-Instalação e Configuração
-
-Clone este repositório:
-
-git clone https://github.com/seu-usuario/seu-repositorio.git
-
-Navegue até o diretório do projeto:
-
-cd seu-repositorio
-
-Instale as dependências do projeto:
-
-composer install
-
-Configure o arquivo .env:
-
-Copie o arquivo de exemplo:
-
-cp .env.example .env
-
-Atualize as informações do banco de dados no arquivo .env.
-
-Gere a chave da aplicação:
-
-php artisan key:generate
-
-Execute as migrações para criar as tabelas no banco de dados:
-
-php artisan migrate
-
-Opcional: Popule o banco de dados com dados iniciais:
-
-php artisan db:seed
-
-Inicie o servidor local:
-
-php artisan serve
-
-Uso
-
-Após configurar o projeto, acesse a aplicação em http://localhost:8000. Utilize as funcionalidades para criar, editar, e gerenciar postagens com categorias, tags e interações de curtidas e comentários.
-
-Contribuição
+## Contribuição
 
 Contribuições são bem-vindas! Para contribuir:
 
-Faça um fork deste repositório.
+1. Faça um fork deste repositório.
+2. Crie uma nova branch:
+   ```bash
+   git checkout -b minha-contribuicao
+   ```
+3. Faça suas alterações e commite-as:
+   ```bash
+   git commit -m 'Descrição da sua mudança'
+   ```
+4. Faça o push para a branch:
+   ```bash
+   git push origin minha-contribuicao
+   ```
+5. Abra um pull request.
 
-Crie uma nova branch:
+## Licença
 
-git checkout -b minha-contribuicao
+Este projeto está licenciado sob a [MIT License](LICENSE).
 
-Faça suas alterações e commite-as:
+## Contato
 
-git commit -m 'Descrição da sua mudança'
+- **Email:** lucasmarqoliv@gmail.com
+- **GitHub:** [lucasmarqoliv](https://github.com/lucasmarqoliv)
 
-Faça o push para a branch:
-
-git push origin minha-contribuicao
-
-Abra um pull request.
-
-Licença
-
-Este projeto está licenciado sob a MIT License.
-
-Contato
-
-Email: seuemail@exemplo.com
-
-GitHub: seu-usuario
