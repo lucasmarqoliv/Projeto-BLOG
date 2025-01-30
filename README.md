@@ -17,6 +17,10 @@ Aplicação desenvolvida em Laravel e PHP que permite gerenciar postagens com fu
 
 O sistema permite criar, editar, excluir, comentar, curtir e descurtir postagens. Além disso, é possível organizar as postagens por categorias e tags, proporcionando uma experiência completa para gerenciamento de conteúdos.
 
+
+https://github.com/user-attachments/assets/ad40be05-4af8-4a35-b283-10d82263d9ce
+
+
 ## Funcionalidades
 
 - **Gerenciamento de Postagens:**
